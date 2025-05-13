@@ -1,0 +1,88 @@
+/* body styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: white;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: gray;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+
+.about, .projects, .contact {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in, transform 1s ease-out;
+}
+
+.about.Visible, .projects.Visible, .contact.Visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* myself  section */
+.myself {
+    background: linear-gradient(120deg, #ff8c00, #ff2e93);
+    color: aliceblue;
+    padding: 60px 20px;
+}
+
+.gta-button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gta-button:hover {
+  transform: scale(1.1);
+}
+
+
+/* pic */
+.pic {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease-in-out;
+}
+.pic:hover{
+    transform: rotate(360deg);
+}
+
+/* about section */
+.about {
+    padding: 40px;
+    background: white;
+}
+
+/* projects section */
+.projects {
+    padding: 40px;
+    background: white;
+}
+
+.project-card {
+    display: inline-block;
+    width: 250px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+/* footer contact section */
+.contact {
+    padding: 25px;
+    background: black;
+    color: #f4f4f4;
+}
